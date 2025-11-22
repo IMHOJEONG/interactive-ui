@@ -45,3 +45,15 @@ charset
 
 - defer 속성: DOM 조작이나 다른 스크립트에 의존성이 있는 경우 더 적합하게 사용될 수 있음 
 
+
+```html
+<meta 
+    http-equiv="X-UA-Compatible" content="IE=edge"
+/>
+```
+
+http-equiv: 프래그마 지시문을 정의
+
+    - x-ua-compatible
+
+        - 지정할 경우, content 특성의 값은 반드시 "IE=edge"여야 합니다. 사용자 에이전트는 이 프래그마를 무시해야 합니다.
