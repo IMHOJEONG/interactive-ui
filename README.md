@@ -1,32 +1,38 @@
+# sv
 
-웹 디자인 분들의 자료, 생각을 공유하고 같이 공부하고자 하는 REPO
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-### rollover_effect 
+## Creating a project
 
-- 참고 링크 : [링크](https://www.youtube.com/watch?time_continue=15&v=fs-kz0aCraE&feature=emb_logo)
+If you're seeing this, you've probably already done this step. Congrats!
 
-![rollover effect](./readme_assets/rollover_effect.gif)
+```sh
+# create a new project in the current directory
+npx sv create
 
-### menu_hover_effects
+# create a new project in my-app
+npx sv create my-app
+```
 
-- 참고 링크 : [링크](https://www.youtube.com/watch?v=TPh8fLeahqM)
+## Developing
 
-![menu_hover_effects](./readme_assets/menu_hover_effects.gif)
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-### button_hover_effects 
+```sh
+npm run dev
 
-![button_hover_effect2](./readme_assets/button_hover2.gif)
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-- 2021.08.27 - 이전부터 조금 해둔 Youtube 과정 업로드 
+## Building
 
-    - 열심히 배우겠습니다
+To create a production version of your app:
 
-    - 현재 CSS 문법 정리 중 
+```sh
+npm run build
+```
 
-### e_commerce_card
+You can preview the production build with `npm run preview`.
 
-![e_commerce_card](./readme_assets/e_commerce_card.gif)
-
-### split_video_background 
-
-![split_video](./readme_assets/split_video.gif)
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
